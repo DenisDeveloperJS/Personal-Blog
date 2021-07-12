@@ -1,0 +1,41 @@
+.header {
+	width: calc(100% - #{$sidebar-width});
+
+	background-color: $header-color;
+	box-shadow: 0px 5px 22px rgba(0, 0, 0, 0.25);
+
+	position: fixed;
+	top: 0;
+	right: 0;
+	z-index: $z-index-header;
+}
+
+.header__wrapper {
+	display: flex;
+
+	animation: slideDown 2s forwards;
+	transform: translateX(-150%);
+}
+
+@keyframes slideRight {
+	0% {
+		transform: translateX(-150%);
+	}
+	100% {
+		transform: translateX(0%);
+	}
+}
+
+.header__navigation {
+	width: 60%;
+}
+
+.navigation__list {
+	display: flex;
+}
+
+.header__user {
+	width: 40%;
+	display: flex;
+	justify-content: flex-end;
+}

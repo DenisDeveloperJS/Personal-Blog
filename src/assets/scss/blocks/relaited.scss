@@ -1,0 +1,39 @@
+.relaited {
+	padding: 3rem 0 0.5rem;
+	border-bottom: 1px solid #1c1c1c;
+}
+
+.relaited__title {
+	margin-bottom: 2rem;
+
+	font-weight: 500;
+	font-size: 1.6rem;
+	line-height: 1.3rem;
+
+	color: $white;
+}
+
+.relaited__list {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.relaited__list-item {
+	width: 50%;
+	margin-bottom: 2.5rem;
+}
+
+.relaited__list-title {
+	width: 95%;
+	font-size: 1.4rem;
+	font-weight: 500;
+	color: #f3eba2;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	white-space: nowrap;
+}
+
+.relaited__list-date {
+	color: #828282;
+	font-size: 1.2rem;
+}

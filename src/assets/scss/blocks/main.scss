@@ -1,0 +1,8 @@
+.main {
+	padding: 10rem 0 8rem $sidebar-width;
+}
+
+.main__wrapper {
+	animation: slideRight 2s forwards;
+	transform: translateX(-150%);
+}

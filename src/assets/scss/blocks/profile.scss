@@ -1,0 +1,41 @@
+.profile__avatar {
+	display: block;
+
+	width: 10rem;
+	height: 10rem;
+	margin: 0 auto;
+
+	border: 2px solid $white;
+	box-shadow: 0 7px 20px rgba(0, 0, 0, 0.25);
+	border-radius: 50%;
+}
+.profile__name {
+	font-size: 1.8rem;
+	line-height: 2.1rem;
+	text-align: center;
+
+	margin-top: 1.9rem;
+	margin-bottom: 0.3rem;
+
+	color: #ffffff;
+}
+.profile__prof {
+	font-weight: 300;
+	font-size: 14px;
+	text-align: center;
+
+	color: $profile-prof;
+}
+
+.profile__text {
+	text-align: center;
+
+	font-size: 1.2rem;
+	line-height: 1.8rem;
+
+	border-top: 1px solid #1c1c1c;
+	border-bottom: 1px solid #1c1c1c;
+
+	padding: 2.9rem 0;
+	margin: 3rem 0;
+}

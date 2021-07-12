@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		{{> head }}
+	</head>
+	<body>
+		<div class="page">
+			<!-- Header -->
+			{{> header }}
+
+			<!-- Sidebar -->
+			{{> sidebar }}
+
+			<!-- Main -->
+			<main class="main">
+				<div class="main__wrapper">
+					<div class="container">{{> body }}</div>
+				</div>
+			</main>
+		</div>
+
+		<!-- JS -->
+		<script defer src="assets/js/app.js"></script>
+	</body>
+</html>
