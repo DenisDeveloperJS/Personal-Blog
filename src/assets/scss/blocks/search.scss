@@ -23,6 +23,16 @@
 		box-shadow: 0 0 0 0.1em rgba(white, 0.5);
 		transition: all 0.45s ease-out, box-shadow 0.45s ease 0.35s;
 	}
+
+	@include breakpoint($tablet-bp) {
+		height: 4rem;
+		font-weight: 300;
+		font-size: 1.6rem;
+		line-height: 1.9rem;
+
+		padding-top: 1rem;
+		padding-bottom: 1rem;
+	}
 }
 
 @keyframes kissOut {
@@ -42,4 +52,8 @@
 .search {
 	width: 100%;
 	max-width: 21rem;
+
+	@include breakpoint($tablet-bp) {
+		display: block;
+	}
 }

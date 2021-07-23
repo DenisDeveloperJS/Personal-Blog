@@ -1,5 +1,14 @@
 .main {
 	padding: 10rem 0 8rem $sidebar-width;
+
+	@include breakpoint($tablet-bp) {
+		padding-left: 0;
+		padding-top: 7rem;
+	}
+
+	@include breakpoint($mobile-bp) {
+		padding-bottom: 5rem;
+	}
 }
 
 .main__wrapper {

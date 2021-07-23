@@ -7,18 +7,27 @@
 	padding: 1.5rem 2rem;
 	min-width: auto;
 	transition: width 5s ease;
+
+	@include breakpoint($mobile-bp) {
+		padding: 1.5rem;
+	}
 }
 
 .add-post__form {
 	display: flex;
+	justify-content: space-between;
 }
 
 .add-post__form-actions {
-	width: 25%;
 	display: flex;
 	justify-content: flex-end;
 	align-items: flex-end;
-	gap: 20px;
+	gap: 2rem;
+
+	@include breakpoint($mobile-bp) {
+		gap: 1rem;
+		flex-direction: column;
+	}
 }
 
 .add-post__area {
@@ -36,6 +45,10 @@
 
 	&::placeholder {
 		color: $text;
+	}
+
+	@include breakpoint($mobile-bp) {
+		padding: 1.5rem;
 	}
 }
 .add-post__send,

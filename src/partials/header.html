@@ -9,7 +9,7 @@
 						>
 					</li>
 					<li class="navigation__item">
-						<a href="" class="navigation__link has_subnav open"
+						<a href="" class="navigation__link has_subnav active"
 							>Статьи</a
 						>
 						<ul class="subnav">
@@ -31,32 +31,38 @@
 						</ul>
 					</li>
 					<li class="navigation__item">
-						<a href="" class="navigation__link">Обо мне</a>
+						<a href="text.html" class="navigation__link">Обо мне</a>
 					</li>
 					<li class="navigation__item">
-						<a href="" class="navigation__link">Реклама</a>
+						<a href="text.html" class="navigation__link">Реклама</a>
 					</li>
 				</ul>
 			</nav>
+
+			<button class="burger active" type="button">
+				<span></span>
+			</button>
 		</div>
 		<div class="header__user">
 			<nav class="navigation">
 				<ul class="navigation__list">
 					<li class="navigation__item">
-						<a href="#" class="navigation__link">Профиль</a>
+						<a href="profile.html" class="navigation__link"
+							>Профиль</a
+						>
 					</li>
 					<li class="navigation__item">
 						<a href="#" class="navigation__link">Выйти</a>
 					</li>
 				</ul>
-				<form action="/" method="POST" class="search">
-					<input
-						class="search__input"
-						type="text"
-						placeholder="Поиск по блогу"
-					/>
-				</form>
 			</nav>
 		</div>
+		<form action="search.html" method="GET" class="search">
+			<input
+				class="search__input"
+				type="text"
+				placeholder="Поиск по блогу"
+			/>
+		</form>
 	</div>
 </header>

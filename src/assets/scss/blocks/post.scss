@@ -8,6 +8,10 @@
 	margin-bottom: 3rem;
 
 	overflow: hidden;
+
+	@include breakpoint($mobile-bp) {
+		padding: 1.5rem;
+	}
 }
 
 .post__content {
@@ -21,6 +25,8 @@
 	line-height: 2.1rem;
 
 	color: #fff;
+
+	margin-bottom: 1.5rem;
 
 	&_mb0 {
 		margin-bottom: 0;
@@ -131,6 +137,12 @@
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+	flex-wrap: wrap;
+
+	@include breakpoint($mobile-bp) {
+		flex-direction: column;
+		align-items: stretch;
+	}
 }
 
 .post__data {
@@ -138,6 +150,10 @@
 
 	color: #828282;
 	line-height: 1.2rem;
+
+	@include breakpoint($mobile-bp) {
+		margin-bottom: 1.3rem;
+	}
 }
 
 .post__data-item {

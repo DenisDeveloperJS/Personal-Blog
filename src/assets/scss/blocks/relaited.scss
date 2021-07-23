@@ -1,6 +1,7 @@
 .relaited {
 	padding: 3rem 0 0.5rem;
 	border-bottom: 1px solid #1c1c1c;
+	margin-bottom: 3rem;
 }
 
 .relaited__title {
@@ -16,11 +17,19 @@
 .relaited__list {
 	display: flex;
 	flex-wrap: wrap;
+
+	@include breakpoint($mobile-bp) {
+		flex-direction: column;
+	}
 }
 
 .relaited__list-item {
 	width: 50%;
 	margin-bottom: 2.5rem;
+
+	@include breakpoint($mobile-bp) {
+		width: 100%;
+	}
 }
 
 .relaited__list-title {

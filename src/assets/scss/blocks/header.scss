@@ -8,6 +8,10 @@
 	top: 0;
 	right: 0;
 	z-index: $z-index-header;
+
+	@include breakpoint($tablet-bp) {
+		width: 100%;
+	}
 }
 
 .header__wrapper {
@@ -28,6 +32,13 @@
 
 .header__navigation {
 	width: 60%;
+
+	@include breakpoint($tablet-bp) {
+		width: 45%;
+	}
+}
+
+.navigation__link {
 }
 
 .navigation__list {
@@ -38,4 +49,8 @@
 	width: 40%;
 	display: flex;
 	justify-content: flex-end;
+
+	@include breakpoint($tablet-bp) {
+		width: 55%;
+	}
 }

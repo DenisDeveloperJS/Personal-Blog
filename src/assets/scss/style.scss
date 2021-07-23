@@ -1,4 +1,5 @@
-@import 'blocks/vars';
+@import 'vars';
+@import 'mixins';
 @import 'vendor/reset';
 @import 'vendor/fonts';
 
@@ -23,6 +24,13 @@ body {
 		'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol',
 		'Noto Color Emoji';
 	line-height: 1.5;
+
+	// При открытии модалки скролл исчезает. Манипулировать этим классом
+
+	&.no-scroll,
+	&.show-sidebar {
+		overflow: hidden;
+	}
 }
 
 /* Blocks */
@@ -46,3 +54,7 @@ body {
 @import 'blocks/relaited';
 @import 'blocks/comments';
 @import 'blocks/form';
+@import 'blocks/work';
+@import 'blocks/cabinet';
+@import 'blocks/modal';
+@import 'blocks/burger';

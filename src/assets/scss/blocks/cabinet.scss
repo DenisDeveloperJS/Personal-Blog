@@ -1,0 +1,51 @@
+.cabinet {
+	display: flex;
+
+	@include breakpoint($mobile-bp) {
+		flex-direction: column-reverse;
+	}
+}
+
+.cabinet__form {
+	width: 34rem;
+
+	@include breakpoint($mobile-bp) {
+		width: 100%;
+	}
+}
+
+.cabinet__avatar {
+	padding-left: 11rem;
+	flex-grow: 1;
+
+	img {
+		display: block;
+
+		margin-bottom: 1.5rem;
+	}
+
+	@include breakpoint($mobile-bp) {
+		padding: 0;
+		margin: 0 auto 3rem;
+	}
+}
+
+.cabinet__file {
+	display: block;
+	text-decoration: underline;
+
+	color: #107eff;
+	cursor: pointer;
+
+	input {
+		display: none;
+	}
+
+	&:hover {
+		text-decoration: none;
+	}
+
+	@include breakpoint($mobile-bp) {
+		text-align: center;
+	}
+}

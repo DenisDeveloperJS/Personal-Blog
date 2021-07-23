@@ -3,7 +3,10 @@
 	<head>
 		{{> head }}
 	</head>
+
+	<!-- open burger -> class="show-sidebar"  for body -->
 	<body>
+		<!-- class="no-scroll"-->
 		<div class="page">
 			<!-- Header -->
 			{{> header }}
@@ -19,7 +22,13 @@
 			</main>
 		</div>
 
+		{{> contact-modal }} {{> share-modal }} {{> story-modal }}
+
 		<!-- JS -->
+		<script
+			defer
+			src="https://code.jquery.com/jquery-3.6.0.min.js"
+		></script>
 		<script defer src="assets/js/app.js"></script>
 	</body>
 </html>

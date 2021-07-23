@@ -4,6 +4,10 @@
 	> .comments-user {
 		padding-left: 3rem;
 		margin-top: 0;
+
+		@include breakpoint($mobile-bp) {
+			padding-left: 1rem;
+		}
 	}
 }
 

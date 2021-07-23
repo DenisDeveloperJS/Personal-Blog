@@ -1,30 +1,76 @@
+.profile {
+	margin-top: -5rem;
+
+	@include breakpoint($tablet-bp) {
+		margin-top: -1rem;
+
+		position: relative;
+
+		border-bottom: 1px solid #1c1c1c;
+
+		margin-bottom: 3rem;
+	}
+}
+
 .profile__avatar {
 	display: block;
 
 	width: 10rem;
 	height: 10rem;
-	margin: 0 auto;
+	margin: 0 auto 2rem;
 
 	border: 2px solid $white;
 	box-shadow: 0 7px 20px rgba(0, 0, 0, 0.25);
 	border-radius: 50%;
+
+	@include breakpoint($tablet-bp) {
+		width: 6.5rem;
+		height: 6.5rem;
+
+		margin-left: 0;
+
+		position: absolute;
+		left: 0;
+	}
 }
+
+.profile__header {
+	margin-bottom: 2rem;
+
+	text-align: center;
+
+	@include breakpoint($tablet-bp) {
+		padding-top: 2rem;
+		padding-left: 8rem;
+		text-align: left;
+	}
+}
+
 .profile__name {
+	display: block;
 	font-size: 1.8rem;
 	line-height: 2.1rem;
-	text-align: center;
 
 	margin-top: 1.9rem;
 	margin-bottom: 0.3rem;
 
 	color: #ffffff;
+
+	@include breakpoint($tablet-bp) {
+		margin-top: 0;
+		font-size: 1.5rem;
+		line-height: 1.8rem;
+	}
 }
 .profile__prof {
 	font-weight: 300;
 	font-size: 14px;
-	text-align: center;
 
 	color: $profile-prof;
+
+	@include breakpoint($tablet-bp) {
+		font-size: 1.2rem;
+	}
 }
 
 .profile__text {
@@ -38,4 +84,8 @@
 
 	padding: 2.9rem 0;
 	margin: 3rem 0;
+
+	@include breakpoint($tablet-bp) {
+		display: none;
+	}
 }

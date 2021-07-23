@@ -8,6 +8,10 @@
 	a:hover {
 		text-decoration: none;
 	}
+
+	@include breakpoint($mobile-bp) {
+		margin-top: 5rem;
+	}
 }
 
 .pagination__link {

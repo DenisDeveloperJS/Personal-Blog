@@ -4,6 +4,18 @@
 	a:hover {
 		text-decoration: none;
 	}
+
+	@include breakpoint($tablet-bp) {
+		display: none;
+	}
+
+	&_mobile {
+		display: none;
+
+		@include breakpoint($tablet-bp) {
+			display: block;
+		}
+	}
 }
 
 .navigation__item {
@@ -11,18 +23,18 @@
 
 	&:hover {
 		.navigation__link {
-			background-color: $blue;
-		}
+			@include breakpoint($tablet-bp) {
+				background-color: none;
+			}
 
-		> .subnav {
-			display: block;
+			background-color: $blue;
 		}
 	}
 }
 
 .navigation__link {
 	display: block;
-	font-size: 1.1rem;
+	font-size: 1.07rem;
 	line-height: 1.3rem;
 	min-width: 86px;
 
@@ -33,9 +45,13 @@
 
 	transition: background-color 0.3s ease-in;
 
+	@include breakpoint($tablet-bp) {
+		font-size: 1.6rem;
+		text-align: left;
+	}
+
 	&.has_subnav {
 		position: relative;
-		padding-left: 0.5rem;
 
 		&:after {
 			content: '';
@@ -45,7 +61,24 @@
 
 			position: absolute;
 			top: 45%;
-			right: 1rem;
+			right: 0.5rem;
+
+			transform: rotate(180deg);
 		}
+
+		&.active:after {
+			transform: rotate(360deg);
+		}
+	}
+
+	&_blue {
+		color: #107eff;
+	}
+}
+
+.navigation__list {
+	@include breakpoint($tablet-bp) {
+		flex-direction: column;
+		justify-content: flex-start;
 	}
 }

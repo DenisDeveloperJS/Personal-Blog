@@ -4,4 +4,8 @@
 	justify-content: center;
 
 	margin-top: 1.8rem;
+
+	@include breakpoint($tablet-bp) {
+		display: none;
+	}
 }

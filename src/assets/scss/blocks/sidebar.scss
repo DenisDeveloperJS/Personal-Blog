@@ -9,10 +9,21 @@
 	top: 0;
 	left: 0;
 	z-index: $z-index-sidebar;
+
+	@include breakpoint($tablet-bp) {
+		top: 4rem;
+
+		transform: translateX(-100%);
+		transition: 0.3s linear transform;
+
+		.show-sidebar & {
+			transform: translateX(0);
+		}
+	}
 }
 
 .sidebar__header {
-	height: 180px;
+	height: 18rem;
 	background-color: $secondary;
 
 	img {
@@ -21,26 +32,45 @@
 		height: 100%;
 		object-fit: cover;
 	}
+
+	@include breakpoint($tablet-bp) {
+		height: 10rem;
+	}
 }
 
 .sidebar__content {
 	padding: 0 2rem;
-	margin-top: -5rem;
 	position: relative;
+
+	@include breakpoint($tablet-bp) {
+		flex-grow: 2;
+	}
 }
 
 .sidebar__footer {
 	display: flex;
 	justify-content: space-between;
 	padding: 0 2rem;
+
+	@include breakpoint($tablet-bp) {
+		padding: 1.5rem;
+	}
 }
 
 .sidebar__wrapper {
 	animation: slideRight 2s forwards;
 	display: inline-block;
 	transform: translateY(-150%);
-}
 
+	@include breakpoint($tablet-bp) {
+		display: flex;
+		flex-direction: column;
+
+		height: calc(100vh - 3rem);
+
+		overflow: auto;
+	}
+}
 @keyframes slideDown {
 	0% {
 		transform: translateY(-150%);

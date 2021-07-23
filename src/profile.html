@@ -1,0 +1,61 @@
+---
+layout: default
+title: Profile
+---
+
+<h1 class="page__title">Профиль</h1>
+
+<form action="/" method="POST" class="form">
+	<div class="cabinet">
+		<div class="cabinet__form">
+			<div class="form__group form__group_md">
+				<input
+					type="text"
+					class="form__control"
+					placeholder="Ваше имя"
+					value="Лукьянов Денис"
+				/>
+				<span class="form__line"></span>
+			</div>
+
+			<div class="form__group form__group_md">
+				<input
+					type="email"
+					class="form__control"
+					placeholder="Ваш e-mail"
+					value="denisdevelop4604@gmail.com"
+				/>
+				<span class="form__line"></span>
+			</div>
+
+			<div class="form__group form__group_md">
+				<input
+					type="password"
+					class="form__control"
+					placeholder="Новый пароль"
+				/>
+				<span class="form__line"></span>
+			</div>
+
+			<div class="form__group form__group_md">
+				<input
+					type="password"
+					class="form__control"
+					placeholder="Потвердить пароль"
+				/>
+				<span class="form__line"></span>
+			</div>
+
+			<button type="submit" class="btn btn_blue btn_rounded btn_sm">
+				Сохранить
+			</button>
+		</div>
+		<div class="cabinet__avatar">
+			<img src="http://placehold.it/150" alt="avatar" />
+			<label class="cabinet__file">
+				<input type="file" />
+				Выбрать аватар
+			</label>
+		</div>
+	</div>
+</form>

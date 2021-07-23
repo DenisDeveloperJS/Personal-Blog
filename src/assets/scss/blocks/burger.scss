@@ -1,0 +1,82 @@
+.burger {
+	display: none;
+	width: 3rem;
+	height: 2rem;
+
+	position: absolute;
+	top: 50%;
+	left: 1.5rem;
+
+	transform: translateY(-50%);
+
+	background: none;
+	border: none;
+
+	span {
+		display: block;
+
+		width: 100%;
+		height: 2px;
+
+		background-color: $white;
+
+		position: absolute;
+		left: 0;
+	}
+
+	&::after,
+	&::before {
+		position: absolute;
+		display: block;
+
+		width: 100%;
+		height: 2px;
+
+		background-color: $white;
+
+		transition: 0.2s ease-in transform;
+	}
+
+	&::after,
+	&::before {
+		content: '';
+	}
+
+	&::after {
+		top: 0;
+	}
+
+	&::before {
+		bottom: 0;
+	}
+
+	span {
+		top: 50%;
+		transform: translateY(-50%);
+
+		transition: 0.2s ease-in opacity;
+	}
+
+	.show-sidebar & {
+		span {
+			opacity: 0;
+		}
+
+		&::after,
+		&::before {
+			top: 50%;
+		}
+
+		&:before {
+			transform: rotate(45deg);
+		}
+
+		&:after {
+			transform: rotate(-45deg);
+		}
+	}
+
+	@include breakpoint($tablet-bp) {
+		display: block;
+	}
+}

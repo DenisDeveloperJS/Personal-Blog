@@ -10,8 +10,10 @@
 					src="https://place-hold.it/100"
 					alt=""
 				/>
-				<div class="profile__name">Лукьянов Денис</div>
-				<div class="profile__prof">Блог front-end разработчика</div>
+				<div class="profile__header">
+					<div class="profile__name">Лукьянов Денис</div>
+					<div class="profile__prof">Блог front-end разработчика</div>
+				</div>
 
 				<ul class="social">
 					<li class="social__item">
@@ -45,17 +47,73 @@
 
 				<div class="profile__text">
 					<p>
-						Front-end разработчик. Практик верстки сайтов. Мне 14
-						лет. Занимаюсь программированием с конца 2018 года.
-						Сделал более 10 проектов на HTML, SCSS, JS, React.
-						Наработал более 500 часов в создании сайтов.
+						Lorem ipsum dolor sit amet, consectetur adipisicing
+						elit. Ab error veniam magni ut officiis minima, dolores
+						aspernatur vitae, explicabo accusantium amet at expedita
+						corporis sunt?
 					</p>
 				</div>
 			</div>
+
+			<nav class="navigation navigation_mobile">
+				<ul class="navigation__list">
+					<li class="navigation__item">
+						<a href="index.html" class="navigation__link"
+							>Главная</a
+						>
+					</li>
+					<li class="navigation__item">
+						<a href="#" class="navigation__link has_subnav"
+							>Статьи</a
+						>
+						<ul class="subnav">
+							<li class="navigation__item">
+								<a class="subnav__link" href="#"
+									>Создание сайтов</a
+								>
+							</li>
+							<li class="navigation__item">
+								<a class="subnav__link" href="#"
+									>Интернет-маркетинг</a
+								>
+							</li>
+							<li class="navigation__item">
+								<a class="subnav__link" href="#"
+									>Продвижение видео</a
+								>
+							</li>
+						</ul>
+					</li>
+					<li class="navigation__item">
+						<a
+							href="text.html"
+							class="navigation__link navigation__link_blue"
+							>Обо мне</a
+						>
+					</li>
+					<li class="navigation__item">
+						<a href="text.html" class="navigation__link">Реклама</a>
+					</li>
+					<li class="navigation__item">
+						<a href="profile.html" class="navigation__link"
+							>Профиль</a
+						>
+					</li>
+					<li class="navigation__item">
+						<a href="#" class="navigation__link">Выйти</a>
+					</li>
+				</ul>
+			</nav>
 		</div>
 		<div class="sidebar__footer">
-			<a class="btn btn_red" href="#">Мои работы</a>
-			<button class="btn btn_blue" type="button">Написать мне</button>
+			<a class="btn btn_red" href="works.html">Мои работы</a>
+			<button
+				class="btn btn_blue"
+				type="button"
+				data-modal="contact-modal"
+			>
+				Написать мне
+			</button>
 		</div>
 	</div>
 </aside>
